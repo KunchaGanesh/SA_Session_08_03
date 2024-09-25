@@ -1,0 +1,145 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Demo_DataScrapping" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="881.3333333333334,826.6666666666666" sap2010:WorkflowViewState.IdRef="Demo_DataScrapping_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Demo_DataScrapping" sap:VirtualizedContainerService.HintSize="546,762" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="484,651.3333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="fb04fd55-720c-48a3-b4a8-f9d9cb6ce0ad" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,432" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Year (July 1)' ReferenceName='Year&amp;#xA;(July 1)' ReferenceIdx='0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Population' ReferenceName='Population' ReferenceIdx='1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Yearly % Change' ReferenceName='Yearly %&amp;#xA;Change' ReferenceIdx='2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Yearly Change' ReferenceName='Yearly&amp;#xA;Change' ReferenceIdx='3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Median Age' ReferenceName='Median&amp;#xA;Age' ReferenceIdx='4'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Fertility Rate' ReferenceName='Fertility&amp;#xA;Rate' ReferenceIdx='5'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Density (P/Km²)' ReferenceName='Density&amp;#xA;(P/Km²)' ReferenceIdx='6'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Year&amp;#xA;(July 1)' attr='fulltext' /&gt;&lt;column name='Population' attr='fulltext' /&gt;&lt;column name='Yearly %&amp;#xA;Change' attr='fulltext' /&gt;&lt;column name='Yearly&amp;#xA;Change' attr='fulltext' /&gt;&lt;column name='Median&amp;#xA;Age' attr='fulltext' /&gt;&lt;column name='Fertility&amp;#xA;Rate' attr='fulltext' /&gt;&lt;column name='Density&amp;#xA;(P/Km²)' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="388,160" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="317, 316, 1284, 797" DesignTimeScaleFactor="1.2000000476837158" FriendlyName="'Year (July'" FullSelectorArgument="&lt;webctrl aaname='Year (July 1) Population Yearly %  Change Yearly Change Median A*' tag='TABLE' /&gt;" Guid="74328b4d-86b6-4a71-8141-2789977f20f5" InformativeScreenshot="75ba4207467ed391537a4eb6363fdfa4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='World Population Clock: 8.2 Billion People (LIVE, 2024) - Worldometer' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Data" WorkbookPath="PopulationData.xlsx">
+              <ui:WriteRange.StartingCell>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:WriteRange.StartingCell>
+            </ui:WriteRange>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="81ec88f330522259b97e5c7c8f11a3ed.jpg" Selector="&lt;html app='chrome.exe' title='World Population Clock: 8.2 Billion People (LIVE, 2024) - Worldometer' /&gt;" Title="World Population Clock: 8.2 Billion People (LIVE, 2024) - Worldometer" Url="https://www.worldometers.info/world-population/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
